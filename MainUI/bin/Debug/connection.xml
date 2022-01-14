@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Table><Connection><Server>192.168.137.1</Server><Database>rd_salesinventorydb</Database><User>root</User><Password>root</Password><Port>3306</Port><Security>true</Security></Connection></Table>

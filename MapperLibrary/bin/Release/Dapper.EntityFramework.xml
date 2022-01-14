@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dapper.EntityFramework</name>
+    </assembly>
+    <members>
+        <member name="T:Dapper.EntityFramework.DbGeographyHandler">
+            <summary>
+            Type-handler for the DbGeography spatial type.
+            </summary>
+        </member>
+        <member name="M:Dapper.EntityFramework.DbGeographyHandler.#ctor">
+            <summary>
+            Create a new handler instance.
+            </summary>
+        </member>
+        <member name="F:Dapper.EntityFramework.DbGeographyHandler.Default">
+            <summary>
+            Default handler instance
+            </summary>
+        </member>
+        <member name="M:Dapper.EntityFramework.DbGeographyHandler.SetValue(System.Data.IDbDataParameter,System.Data.Entity.Spatial.DbGeography)">
+            <summary>
+            Assign the value of a parameter before a command executes.
+            </summary>
+            <param name="parameter">The parameter to configure.</param>
+            <param name="value">Parameter value.</param>
+        </member>
+        <member name="M:Dapper.EntityFramework.DbGeographyHandler.Parse(System.Object)">
+            <summary>
+            Parse a database value back to a typed value.
+            </summary>
+            <param name="value">The value from the database.</param>
+            <returns>The typed value.</returns>
+        </member>
+        <member name="T:Dapper.EntityFramework.DbGeometryHandler">
+            <summary>
+            Type-handler for the DbGeometry spatial type.
+            </summary>
+        </member>
+        <member name="M:Dapper.EntityFramework.DbGeometryHandler.#ctor">
+            <summary>
+            Create a new handler instance.
+            </summary>
+        </member>
+        <member name="F:Dapper.EntityFramework.DbGeometryHandler.Default">
+            <summary>
+            Default handler instance.
+            </summary>
+        </member>
+        <member name="M:Dapper.EntityFramework.DbGeometryHandler.SetValue(System.Data.IDbDataParameter,System.Data.Entity.Spatial.DbGeometry)">
+            <summary>
+            Assign the value of a parameter before a command executes.
+            </summary>
+            <param name="parameter">The parameter to configure.</param>
+            <param name="value">Parameter value.</param>
+        </member>
+        <member name="M:Dapper.EntityFramework.DbGeometryHandler.Parse(System.Object)">
+            <summary>
+            Parse a database value back to a typed value.
+            </summary>
+            <param name="value">The value from the database.</param>
+            <returns>The typed value.</returns>
+        </member>
+        <member name="T:Dapper.EntityFramework.Handlers">
+            <summary>
+            Acts on behalf of all type-handlers in this package
+            </summary>
+        </member>
+        <member name="M:Dapper.EntityFramework.Handlers.Register">
+            <summary>
+            Register all type-handlers in this package
+            </summary>
+        </member>
+    </members>
+</doc>

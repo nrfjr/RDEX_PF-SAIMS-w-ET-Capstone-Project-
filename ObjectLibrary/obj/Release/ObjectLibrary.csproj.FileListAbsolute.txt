@@ -1,0 +1,6 @@
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\bin\Release\ObjectLibrary.dll
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\bin\Release\ObjectLibrary.pdb
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\obj\Release\ObjectLibrary.csproj.CoreCompileInputs.cache
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\obj\Release\ObjectLibrary.dll
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\obj\Release\ObjectLibrary.pdb
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\obj\Release\ObjectLibrary.csproj.AssemblyReference.cache
