@@ -43,10 +43,10 @@ B. SOFTWARE REQUIREMENTS
 
 DATABASE
 
-database name : rd_saims
-default admin account : 
-	username : root
-	password : root
+	- database name : rd_saims
+	- default admin account : 
+	- username : root
+	- password : root
 	
 
 =====================================================================
