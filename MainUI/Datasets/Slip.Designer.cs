@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace MainUI.Datasets {
+namespace RDEX.Datasets {
     
     
     /// <summary>

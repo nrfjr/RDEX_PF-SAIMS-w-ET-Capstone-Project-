@@ -76,7 +76,7 @@ namespace MainUI.Forms
             this.btnVisibility.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnVisibility.BorderRadius = 6;
             this.btnVisibility.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
-            this.btnVisibility.CheckedState.Image = global::MainUI.Properties.Resources.hide_login;
+            this.btnVisibility.CheckedState.Image = global::RDEX.Properties.Resources.hide_login;
             this.btnVisibility.CheckedState.Parent = this.btnVisibility;
             this.btnVisibility.CustomImages.Parent = this.btnVisibility;
             this.btnVisibility.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -88,7 +88,7 @@ namespace MainUI.Forms
             this.btnVisibility.Font = new System.Drawing.Font("Open Sans SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVisibility.ForeColor = System.Drawing.Color.White;
             this.btnVisibility.HoverState.Parent = this.btnVisibility;
-            this.btnVisibility.Image = global::MainUI.Properties.Resources.show_login;
+            this.btnVisibility.Image = global::RDEX.Properties.Resources.show_login;
             this.btnVisibility.Location = new System.Drawing.Point(290, 176);
             this.btnVisibility.Name = "btnVisibility";
             this.btnVisibility.ShadowDecoration.Parent = this.btnVisibility;
@@ -208,7 +208,7 @@ namespace MainUI.Forms
             // 
             // pbxLogo
             // 
-            this.pbxLogo.Image = global::MainUI.Properties.Resources.company_logo;
+            this.pbxLogo.Image = global::RDEX.Properties.Resources.company_logo;
             this.pbxLogo.Location = new System.Drawing.Point(38, 12);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(148, 116);
@@ -219,7 +219,7 @@ namespace MainUI.Forms
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::MainUI.Properties.Resources.farmpond;
+            this.pictureBox1.Image = global::RDEX.Properties.Resources.farmpond;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1000, 600);

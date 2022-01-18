@@ -232,7 +232,7 @@ namespace MainUI.Dialog
             // 
             this.wdraw_revert.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.wdraw_revert.HeaderText = "Revert";
-            this.wdraw_revert.Image = global::MainUI.Properties.Resources.undo;
+            this.wdraw_revert.Image = global::RDEX.Properties.Resources.undo;
             this.wdraw_revert.Name = "wdraw_revert";
             this.wdraw_revert.ReadOnly = true;
             this.wdraw_revert.Width = 51;
@@ -241,7 +241,7 @@ namespace MainUI.Dialog
             // 
             this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewImageColumn1.HeaderText = "Revert";
-            this.dataGridViewImageColumn1.Image = global::MainUI.Properties.Resources.undo;
+            this.dataGridViewImageColumn1.Image = global::RDEX.Properties.Resources.undo;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             // 
             // btnClose

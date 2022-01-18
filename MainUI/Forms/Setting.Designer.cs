@@ -558,7 +558,7 @@ namespace MainUI
             // pbxProfile
             // 
             this.pbxProfile.BackColor = System.Drawing.Color.White;
-            this.pbxProfile.Image = global::MainUI.Properties.Resources.user;
+            this.pbxProfile.Image = global::RDEX.Properties.Resources.user;
             this.pbxProfile.ImageRotate = 0F;
             this.pbxProfile.Location = new System.Drawing.Point(13, 48);
             this.pbxProfile.Name = "pbxProfile";

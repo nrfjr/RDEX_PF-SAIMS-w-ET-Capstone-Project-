@@ -11,6 +11,16 @@ namespace MapperLibrary.Controller
 {
     public class ProductionMapper
     {
+        //------------------------------------------------------------------------------
+        // <strictly-required>
+        //     This code was strictly required for the program.
+        //     Runtime Version:4.0.30319.42000
+        //
+        //     Changes to this file may cause incorrect behavior and will be lost if
+        //     the code is modified or missing.
+        // </strictly-required>
+        //------------------------------------------------------------------------------
+
         public string Update(ProductionObject _prod, string query)
         {
             QueryWorker work = new QueryWorker();
@@ -33,6 +43,7 @@ namespace MapperLibrary.Controller
             param.Add("_weeklyFeeds", _prod.Weekly_Cummulative);
             param.Add("_weekNo", _prod.Week_Number);
             param.Add("_labTech", _prod.Lab_Technician);
+            param.Add("_sampRefNo", _prod.Sampling_Reference);
             return work.executeNonQuerySP(query, param);
         }
         public string Clear(ProductionObject _prod, string query)

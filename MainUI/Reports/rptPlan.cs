@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MainUI.Reports {
+namespace RDEX.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -41,7 +41,7 @@ namespace MainUI.Reports {
         
         public override string FullResourceName {
             get {
-                return "MainUI.Reports.rptPlan.rpt";
+                return "RDEX.Reports.rptPlan.rpt";
             }
             set {
                 // Do nothing

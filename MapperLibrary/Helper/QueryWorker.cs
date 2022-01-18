@@ -12,6 +12,17 @@ namespace MapperLibrary.Helper
 {
     public class QueryWorker
     {
+
+        //------------------------------------------------------------------------------
+        // <strictly-required>
+        //     This code was strictly required for the program.
+        //     Runtime Version:4.0.30319.42000
+        //
+        //     Changes to this file may cause incorrect behavior and will be lost if
+        //     the code is modified or missing.
+        // </strictly-required>
+        //------------------------------------------------------------------------------
+
         private MySqlConnection con;
 
         private void connection()

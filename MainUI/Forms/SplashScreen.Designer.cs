@@ -60,7 +60,7 @@ namespace MainUI
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::MainUI.Properties.Resources.Loading;
+            this.pictureBox2.Image = global::RDEX.Properties.Resources.Loading;
             this.pictureBox2.Location = new System.Drawing.Point(229, 127);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(36, 30);
@@ -70,7 +70,7 @@ namespace MainUI
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MainUI.Properties.Resources.company_logo;
+            this.pictureBox1.Image = global::RDEX.Properties.Resources.company_logo;
             this.pictureBox1.Location = new System.Drawing.Point(3, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(262, 120);

@@ -1,5 +1,5 @@
 ﻿using MainUI.Forms.Admin_Forms;
-using MainUI.Reports;
+using RDEX.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

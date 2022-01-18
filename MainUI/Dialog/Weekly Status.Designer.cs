@@ -84,6 +84,9 @@ namespace MainUI.Dialog
             this.label19 = new System.Windows.Forms.Label();
             this.txtLabTech = new Guna.UI2.WinForms.Guna2TextBox();
             this.errLabtech = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtSampRefNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errSampRefNo = new System.Windows.Forms.Label();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtWN)).BeginInit();
             this.SuspendLayout();
@@ -188,7 +191,7 @@ namespace MainUI.Dialog
             this.cmbPond.HoverState.Parent = this.cmbPond;
             this.cmbPond.ItemHeight = 24;
             this.cmbPond.ItemsAppearance.Parent = this.cmbPond;
-            this.cmbPond.Location = new System.Drawing.Point(336, 148);
+            this.cmbPond.Location = new System.Drawing.Point(336, 91);
             this.cmbPond.Name = "cmbPond";
             this.cmbPond.ShadowDecoration.Parent = this.cmbPond;
             this.cmbPond.Size = new System.Drawing.Size(159, 30);
@@ -201,7 +204,7 @@ namespace MainUI.Dialog
             this.label101.AutoSize = true;
             this.label101.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label101.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.label101.Location = new System.Drawing.Point(333, 129);
+            this.label101.Location = new System.Drawing.Point(333, 72);
             this.label101.Name = "label101";
             this.label101.Size = new System.Drawing.Size(35, 15);
             this.label101.TabIndex = 175;
@@ -212,7 +215,7 @@ namespace MainUI.Dialog
             this.lblArea.AutoSize = true;
             this.lblArea.Font = new System.Drawing.Font("Open Sans SemiBold", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.lblArea.Location = new System.Drawing.Point(335, 177);
+            this.lblArea.Location = new System.Drawing.Point(335, 120);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(63, 15);
             this.lblArea.TabIndex = 177;
@@ -300,7 +303,7 @@ namespace MainUI.Dialog
             this.dtpSampling.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpSampling.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpSampling.HoverState.Parent = this.dtpSampling;
-            this.dtpSampling.Location = new System.Drawing.Point(336, 226);
+            this.dtpSampling.Location = new System.Drawing.Point(336, 166);
             this.dtpSampling.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpSampling.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpSampling.Name = "dtpSampling";
@@ -315,7 +318,7 @@ namespace MainUI.Dialog
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.label6.Location = new System.Drawing.Point(335, 208);
+            this.label6.Location = new System.Drawing.Point(335, 148);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 15);
             this.label6.TabIndex = 187;
@@ -350,7 +353,7 @@ namespace MainUI.Dialog
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.label7.Location = new System.Drawing.Point(333, 283);
+            this.label7.Location = new System.Drawing.Point(333, 221);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 15);
             this.label7.TabIndex = 193;
@@ -374,7 +377,7 @@ namespace MainUI.Dialog
             this.txtLABW.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txtLABW.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLABW.HoverState.Parent = this.txtLABW;
-            this.txtLABW.Location = new System.Drawing.Point(336, 301);
+            this.txtLABW.Location = new System.Drawing.Point(336, 239);
             this.txtLABW.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLABW.Name = "txtLABW";
             this.txtLABW.PasswordChar = '\0';
@@ -392,7 +395,7 @@ namespace MainUI.Dialog
             this.errLABW.AutoSize = true;
             this.errLABW.Font = new System.Drawing.Font("Open Sans", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errLABW.ForeColor = System.Drawing.Color.Red;
-            this.errLABW.Location = new System.Drawing.Point(333, 330);
+            this.errLABW.Location = new System.Drawing.Point(333, 268);
             this.errLABW.Name = "errLABW";
             this.errLABW.Size = new System.Drawing.Size(34, 13);
             this.errLABW.TabIndex = 194;
@@ -710,7 +713,7 @@ namespace MainUI.Dialog
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.label3.Location = new System.Drawing.Point(420, 66);
+            this.label3.Location = new System.Drawing.Point(424, 4);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 200;
@@ -728,7 +731,7 @@ namespace MainUI.Dialog
             this.txtWN.FocusedState.Parent = this.txtWN;
             this.txtWN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtWN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.txtWN.Location = new System.Drawing.Point(423, 84);
+            this.txtWN.Location = new System.Drawing.Point(427, 22);
             this.txtWN.Name = "txtWN";
             this.txtWN.ShadowDecoration.Parent = this.txtWN;
             this.txtWN.Size = new System.Drawing.Size(72, 30);
@@ -741,7 +744,7 @@ namespace MainUI.Dialog
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.label18.Location = new System.Drawing.Point(333, 361);
+            this.label18.Location = new System.Drawing.Point(333, 299);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(124, 15);
             this.label18.TabIndex = 202;
@@ -765,7 +768,7 @@ namespace MainUI.Dialog
             this.txtLSR.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txtLSR.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLSR.HoverState.Parent = this.txtLSR;
-            this.txtLSR.Location = new System.Drawing.Point(336, 379);
+            this.txtLSR.Location = new System.Drawing.Point(336, 317);
             this.txtLSR.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLSR.Name = "txtLSR";
             this.txtLSR.PasswordChar = '\0';
@@ -783,7 +786,7 @@ namespace MainUI.Dialog
             this.errLSR.AutoSize = true;
             this.errLSR.Font = new System.Drawing.Font("Open Sans", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errLSR.ForeColor = System.Drawing.Color.Red;
-            this.errLSR.Location = new System.Drawing.Point(333, 408);
+            this.errLSR.Location = new System.Drawing.Point(333, 346);
             this.errLSR.Name = "errLSR";
             this.errLSR.Size = new System.Drawing.Size(34, 13);
             this.errLSR.TabIndex = 203;
@@ -794,11 +797,11 @@ namespace MainUI.Dialog
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.label19.Location = new System.Drawing.Point(333, 435);
+            this.label19.Location = new System.Drawing.Point(333, 442);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(122, 15);
+            this.label19.Size = new System.Drawing.Size(74, 15);
             this.label19.TabIndex = 205;
-            this.label19.Text = "Laboratory Technician";
+            this.label19.Text = "Sampling By:";
             // 
             // txtLabTech
             // 
@@ -818,12 +821,12 @@ namespace MainUI.Dialog
             this.txtLabTech.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.txtLabTech.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLabTech.HoverState.Parent = this.txtLabTech;
-            this.txtLabTech.Location = new System.Drawing.Point(336, 453);
+            this.txtLabTech.Location = new System.Drawing.Point(336, 460);
             this.txtLabTech.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLabTech.Name = "txtLabTech";
             this.txtLabTech.PasswordChar = '\0';
             this.txtLabTech.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtLabTech.PlaceholderText = "";
+            this.txtLabTech.PlaceholderText = "Laboratory Technician";
             this.txtLabTech.SelectedText = "";
             this.txtLabTech.ShadowDecoration.Parent = this.txtLabTech;
             this.txtLabTech.Size = new System.Drawing.Size(159, 30);
@@ -834,11 +837,64 @@ namespace MainUI.Dialog
             this.errLabtech.AutoSize = true;
             this.errLabtech.Font = new System.Drawing.Font("Open Sans", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errLabtech.ForeColor = System.Drawing.Color.Red;
-            this.errLabtech.Location = new System.Drawing.Point(333, 482);
+            this.errLabtech.Location = new System.Drawing.Point(333, 489);
             this.errLabtech.Name = "errLabtech";
             this.errLabtech.Size = new System.Drawing.Size(34, 13);
             this.errLabtech.TabIndex = 206;
             this.errLabtech.Text = "*error";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.label20.Location = new System.Drawing.Point(333, 372);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(130, 15);
+            this.label20.TabIndex = 208;
+            this.label20.Text = "Sampling Reference No.";
+            // 
+            // txtSampRefNo
+            // 
+            this.txtSampRefNo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.txtSampRefNo.BorderRadius = 6;
+            this.txtSampRefNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSampRefNo.DefaultText = "";
+            this.txtSampRefNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSampRefNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSampRefNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSampRefNo.DisabledState.Parent = this.txtSampRefNo;
+            this.txtSampRefNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSampRefNo.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtSampRefNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSampRefNo.FocusedState.Parent = this.txtSampRefNo;
+            this.txtSampRefNo.Font = new System.Drawing.Font("Open Sans", 9F);
+            this.txtSampRefNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            this.txtSampRefNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSampRefNo.HoverState.Parent = this.txtSampRefNo;
+            this.txtSampRefNo.Location = new System.Drawing.Point(336, 390);
+            this.txtSampRefNo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSampRefNo.Name = "txtSampRefNo";
+            this.txtSampRefNo.PasswordChar = '\0';
+            this.txtSampRefNo.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtSampRefNo.PlaceholderText = "";
+            this.txtSampRefNo.SelectedText = "";
+            this.txtSampRefNo.ShadowDecoration.Parent = this.txtSampRefNo;
+            this.txtSampRefNo.Size = new System.Drawing.Size(159, 30);
+            this.txtSampRefNo.TabIndex = 207;
+            this.txtSampRefNo.Click += new System.EventHandler(this.txtSampRefNo_Click);
+            this.txtSampRefNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLSR_KeyPress);
+            // 
+            // errSampRefNo
+            // 
+            this.errSampRefNo.AutoSize = true;
+            this.errSampRefNo.Font = new System.Drawing.Font("Open Sans", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errSampRefNo.ForeColor = System.Drawing.Color.Red;
+            this.errSampRefNo.Location = new System.Drawing.Point(333, 419);
+            this.errSampRefNo.Name = "errSampRefNo";
+            this.errSampRefNo.Size = new System.Drawing.Size(34, 13);
+            this.errSampRefNo.TabIndex = 209;
+            this.errSampRefNo.Text = "*error";
             // 
             // Weekly_Status
             // 
@@ -846,6 +902,9 @@ namespace MainUI.Dialog
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(514, 557);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.txtSampRefNo);
+            this.Controls.Add(this.errSampRefNo);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.txtLabTech);
             this.Controls.Add(this.errLabtech);
@@ -934,5 +993,8 @@ namespace MainUI.Dialog
         private System.Windows.Forms.Label label19;
         public Guna.UI2.WinForms.Guna2TextBox txtLabTech;
         private System.Windows.Forms.Label errLabtech;
+        private System.Windows.Forms.Label label20;
+        public Guna.UI2.WinForms.Guna2TextBox txtSampRefNo;
+        private System.Windows.Forms.Label errSampRefNo;
     }
 }

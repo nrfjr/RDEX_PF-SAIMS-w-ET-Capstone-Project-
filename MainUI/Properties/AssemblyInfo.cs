@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MainUI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("RD Export Sales and Inventory Management System with Expense Tracker")]
+[assembly: AssemblyDescription("This system allows prawn farms to manage their inventory and assist their transaction with ease.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MainUI")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCompany("Capstone Researcher 2021-2022")]
+[assembly: AssemblyProduct("RD Export Sales and Inventory Management System with Expense Tracker")]
+[assembly: AssemblyCopyright("Copyright © 2021 RDEX Foods International Philippines. Incorporated.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

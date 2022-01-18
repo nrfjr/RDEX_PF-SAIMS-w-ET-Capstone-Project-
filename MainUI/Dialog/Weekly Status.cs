@@ -18,14 +18,17 @@ namespace MainUI.Dialog
 {
     public partial class Weekly_Status : Form
     {
+        public int tries { get; set; }
         Homepage hmp;
         List<Validator> SamplingValidator = new List<Validator>();
         public Weekly_Status(Homepage hmpg)
         {
             InitializeComponent();
+            if (string.IsNullOrEmpty(txtSampRefNo.Text)) { GetReferenceNumber(); }
             SamplingValidator.Add(new Validator(txtLABW, errLABW, "latest body weight", "required"));
             SamplingValidator.Add(new Validator(txtLSR, errLSR, "latest survival rate", "required"));
             SamplingValidator.Add(new Validator(txtLabTech, errLabtech, "laboratory technician", "required|name"));
+            SamplingValidator.Add(new Validator(txtSampRefNo, errSampRefNo, "sampling reference", "required"));
             hmp = hmpg;
         }
         public void fillProduction()
@@ -104,7 +107,8 @@ namespace MainUI.Dialog
                         Weekly_Cummulative = Double.Parse(lblWeekly.Text.Replace("-", "")),
                         Week_Number = Int32.Parse(txtWN.Value.ToString()),
                         Survival_Rate = Double.Parse(txtLSR.Text),
-                        Lab_Technician = txtLabTech.Text
+                        Lab_Technician = txtLabTech.Text,
+                        Sampling_Reference = Int64.Parse(txtSampRefNo.Text)
                     };
                     prodAction.Update(entry, "RD_Production_InsertUpdateSampling");
                     Alert_Dialog.ShowAlertMessage($"Week {txtWN.Value.ToString()} sampling has been created successfully", Alert_Dialog.AlertType.SUCCESS);
@@ -196,6 +200,33 @@ namespace MainUI.Dialog
             lblBiomass.Text = String.Format("{0:n0}", biomass);
             fcr = wfeeds / biomass;
             lblFCR.Text = String.Format("{0:n}", fcr);
+        }
+        private void GetReferenceNumber()
+        {
+            long LastSamplingReferenceNumber = 100000;
+            var os = new QueryWorker().returnScalarText($"SELECT (CASE WHEN Sampling_Reference IS NULL THEN 0 WHEN Sampling_Reference IS NOT NULL THEN Sampling_Reference + 1 END) AS Sampling_Reference FROM rd_saims.tbl_weeklyupdate Order By Production_Id DESC LIMIT 1; ");
+            if (!string.IsNullOrEmpty(os) && os != "0") { LastSamplingReferenceNumber = Convert.ToInt64(os); }
+            if (LastSamplingReferenceNumber != 0)
+            {
+                txtSampRefNo.Text = Convert.ToString(LastSamplingReferenceNumber);
+            }
+            else
+            {
+                txtSampRefNo.Text = Convert.ToString(LastSamplingReferenceNumber);
+            }
+        }
+
+        private void txtSampRefNo_Click(object sender, EventArgs e)
+        {
+            if (tries <= 0)
+            {
+                DialogResult result = Confirmation.ShowDialog("Are you sure to modify Sampling Reference Number?");
+                if (result == DialogResult.Yes)
+                {
+                    tries++;
+                }
+            }
+ 
         }
     }
 }

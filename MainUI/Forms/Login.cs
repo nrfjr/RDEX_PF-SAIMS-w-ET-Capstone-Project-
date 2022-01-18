@@ -4,6 +4,7 @@ using MainUI.Forms.Admin_Forms;
 using MapperLibrary.Controller;
 using MapperLibrary.Helper;
 using ObjectLibrary;
+using RDEX.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -83,7 +84,7 @@ namespace MainUI.Forms
                     home.CheckRole(dt.Rows[0][5].ToString());
                     home.SetVisibilityByRole(dt.Rows[0][5].ToString() == "Admin" ? true : false);
                     home.labelCurrentUserName.Text = dt.Rows[0][3].ToString();
-                    home.pbxCurrentUserProfile.Image = rsrcmgr.ByteArrayToImage(File.ReadAllBytes(SystemPath.ProfilesPath + dt.Rows[0][6].ToString()));
+                try { home.pbxCurrentUserProfile.Image = rsrcmgr.ByteArrayToImage(File.ReadAllBytes(SystemPath.ProfilesPath + dt.Rows[0][6].ToString())); } catch { home.pbxCurrentUserProfile.Image = Resources.user; }
                     Alert_Dialog.ShowAlertMessage($"Welcome {dt.Rows[0][5].ToString()} !", Alert_Dialog.AlertType.SUCCESS);
                     home.current_user_Id = Int32.Parse(dt.Rows[0][0].ToString());
                     new AuditTrailMapper().InsertActivity(Convert.ToInt32(dt.Rows[0][0].ToString()), $"Logged in to the system", "System");

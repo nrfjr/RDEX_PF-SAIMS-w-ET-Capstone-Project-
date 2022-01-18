@@ -2,9 +2,6 @@ C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\SqlServ
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\SqlServerTypes\x86\msvcr120.dll
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
-C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\MainUI.exe.config
-C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\MainUI.exe
-C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\MainUI.pdb
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\AxShockwaveFlashObjects.dll
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\BouncyCastle.Crypto.dll
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
@@ -94,7 +91,6 @@ C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\System.
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\Dapper.xml
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.csproj.AssemblyReference.cache
-C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.exe.config
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Dialog.Alert_Dialog.resources
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Dialog.Backup_and_Restore.resources
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Dialog.Confirmation.resources
@@ -120,12 +116,16 @@ C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Forms.Login.resources
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Setting.resources
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.SplashScreen.resources
-C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Properties.Resources.resources
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.csproj.GenerateResource.cache
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.csproj.CoreCompileInputs.cache
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.csproj.CopyComplete
-C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.exe
-C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.pdb
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Dialog.Withdrawal_History.resources
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Dialog.Invoice_Printer.resources
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\MainUI.Dialog.About.resources
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\RDEX.Properties.Resources.resources
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\RDEX.exe.config
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\RDEX.exe
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\bin\Release\RDEX.pdb
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\RDEX.exe.config
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\RDEX.exe
+C:\Users\diane\Documents\SalesAndInventoryWithExpense\MainUI\obj\Release\RDEX.pdb

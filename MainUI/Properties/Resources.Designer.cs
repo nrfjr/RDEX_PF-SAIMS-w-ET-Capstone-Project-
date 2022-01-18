@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MainUI.Properties {
+namespace RDEX.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MainUI.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MainUI.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RDEX.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -103,6 +103,16 @@ namespace MainUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dev {
+            get {
+                object obj = ResourceManager.GetObject("Dev", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap edit {
             get {
                 object obj = ResourceManager.GetObject("edit", resourceCulture);
@@ -156,16 +166,6 @@ namespace MainUI.Properties {
         internal static System.Drawing.Bitmap notification {
             get {
                 object obj = ResourceManager.GetObject("notification", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap PicsArt_03_11_07_36_42 {
-            get {
-                object obj = ResourceManager.GetObject("PicsArt_03-11-07.36.42", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

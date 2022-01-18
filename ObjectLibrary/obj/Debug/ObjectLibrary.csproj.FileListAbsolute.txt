@@ -3,4 +3,3 @@ C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\bin\Debug\Ob
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\obj\Debug\ObjectLibrary.csproj.CoreCompileInputs.cache
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\obj\Debug\ObjectLibrary.dll
 C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\obj\Debug\ObjectLibrary.pdb
-C:\Users\diane\Documents\SalesAndInventoryWithExpense\ObjectLibrary\obj\Debug\ObjectLibrary.csproj.AssemblyReference.cache

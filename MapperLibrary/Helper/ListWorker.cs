@@ -12,7 +12,21 @@ namespace MapperLibrary.Helper
 {
     class ListWorker<T> where T : class
     {
+
+        //------------------------------------------------------------------------------
+        // <strictly-required>
+        //     This code was strictly required for the program.
+        //     Runtime Version:4.0.30319.42000
+        //
+        //     Changes to this file may cause incorrect behavior and will be lost if
+        //     the code is modified or missing.
+        // </strictly-required>
+        //------------------------------------------------------------------------------
+
+
         public MySqlConnection con;
+
+
         private void connection()
         {
             con = new MySqlConnection(MySqlDBConnection.stringCon);

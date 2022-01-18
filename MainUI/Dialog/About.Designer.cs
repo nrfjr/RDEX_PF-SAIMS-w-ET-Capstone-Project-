@@ -195,7 +195,7 @@ namespace MainUI.Dialog
             // 
             // guna2CirclePictureBox1
             // 
-            this.guna2CirclePictureBox1.Image = global::MainUI.Properties.Resources.PicsArt_03_11_07_36_42;
+            this.guna2CirclePictureBox1.Image = global::RDEX.Properties.Resources.Dev;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(14, 12);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
@@ -555,9 +555,9 @@ namespace MainUI.Dialog
             this.label5.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(24, 115);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(292, 15);
+            this.label5.Size = new System.Drawing.Size(258, 15);
             this.label5.TabIndex = 2;
-            this.label5.Text = "© 2021 - 2022 RDEX Food International Philippines, Inc.\r\n";
+            this.label5.Text = "© 2021 RDEX Food International Philippines, Inc.\r\n";
             // 
             // labelVersion
             // 
@@ -584,7 +584,7 @@ namespace MainUI.Dialog
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::MainUI.Properties.Resources.farmpond;
+            this.pictureBox1.Image = global::RDEX.Properties.Resources.farmpond;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1000, 600);

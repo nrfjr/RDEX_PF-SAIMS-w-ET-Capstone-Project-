@@ -3,7 +3,7 @@ using LiveCharts;
 using LiveCharts.Wpf;
 using MainUI.Datasets;
 using MainUI.Dialog;
-using MainUI.Reports;
+using RDEX.Reports;
 using MapperLibrary.Controller;
 using MapperLibrary.Helper;
 using ObjectLibrary;
@@ -20,6 +20,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using UtilitiesLibrary;
+using RDEX.Properties;
 
 namespace MainUI.Forms.Admin_Forms
 {
@@ -2682,7 +2683,7 @@ namespace MainUI.Forms.Admin_Forms
                     notif.Dock = DockStyle.Top;
                     panelNotification.Padding = new Padding(5);
                 }
-                btnNotif.Image = Properties.Resources._notification;
+                btnNotif.Image = Resources._notification;
                 if (dt.Rows.Count == 1)
                 {
                     Alert_Dialog.ShowAlertMessage($"There is {dt.Rows.Count} stock below restocking level.", Alert_Dialog.AlertType.WARNING);
@@ -2696,7 +2697,7 @@ namespace MainUI.Forms.Admin_Forms
             catch
             {
                 Alert_Dialog.ShowAlertMessage($"There are no stock below restocking level.", Alert_Dialog.AlertType.INFO);
-                btnNotif.Image = Properties.Resources.notification;
+                btnNotif.Image = Resources.notification;
             }
         }
         private void btnCritReq_Click(object sender, EventArgs e)
@@ -2866,6 +2867,7 @@ namespace MainUI.Forms.Admin_Forms
                 cmbSalesCustomer.DataSource = customers;
                 cmbSalesCustomer.DisplayMember = "Company_Name";
                 cmbSalesCustomer.ValueMember = "Person_Id";
+                cmbSalesCustomer.SelectedItem = null;
 
                 var prodAction = new ProductionMapper();
                 var farmName = new ProductionObject()
@@ -2876,6 +2878,7 @@ namespace MainUI.Forms.Admin_Forms
                 cmbSalesProduction.DataSource = ponds;
                 cmbSalesProduction.DisplayMember = "Pond_Code";
                 cmbSalesProduction.ValueMember = "Production_Id";
+                cmbSalesProduction.SelectedItem = null;
                 
 
                 var priceAction = new PriceMapper();
@@ -2904,6 +2907,7 @@ namespace MainUI.Forms.Admin_Forms
             OrderValidator.ForEach(validator => validator.Reset());
             panelSalesEntry.Size = new Size(0, panelSalesEntry.Size.Height);
             Selected_Id = 0;
+            lblSalesHQty.Text = string.Empty;
             new InputRemoverAndValidation().ClearText(panelSalesEntry);
         }
         private async void btnRefreshOrders_Click(object sender, EventArgs e)
@@ -2980,6 +2984,7 @@ namespace MainUI.Forms.Admin_Forms
 
                 Selected_Id = Int32.Parse(ord.Rows[rowIndex].Cells[0].Value.ToString());
                 Order_PId = Int32.Parse(ord.Rows[rowIndex].Cells[1].Value.ToString());
+                cmbSalesProduction.Text = ord.Rows[rowIndex].Cells[5].Value.ToString();
                 txtSalesOS.Text = ord.Rows[rowIndex].Cells[3].Value.ToString();
                 cmbSalesCustomer.Text = ord.Rows[rowIndex].Cells[6].Value.ToString();
                 txtSalesQty.Text = ord.Rows[rowIndex].Cells[7].Value.ToString();
@@ -3178,22 +3183,26 @@ namespace MainUI.Forms.Admin_Forms
         private void GetCustomerType()
         {
             var buyerType = new QueryWorker().returnScalarText($"SELECT r.Buyer_Status FROM rd_saims.tbl_relationship AS r LEFT JOIN tbl_Company AS c ON r.Company_Id = c.Company_Id WHERE c.Company_Name = '{cmbSalesCustomer.Text}' LIMIT 1");
-            if (buyerType == "Big")
+            if (cmbSalesProduction.SelectedItem == null)
             {
-                if (string.IsNullOrEmpty(lblSalesHQty.Text))
-                {
-                    Alert_Dialog.ShowAlertMessage("Please select pond for sales first", Alert_Dialog.AlertType.INFO);
-                }
-                else
-                {
-                    txtSalesQty.Text = DefaultHarvQty.ToString();
-                    txtSalesQty.Enabled = false;
-                }
+                Alert_Dialog.ShowAlertMessage("Please select pond for sales first", Alert_Dialog.AlertType.INFO);
+                cmbSalesCustomer.SelectedItem = null;
+
             }
             else
             {
-                txtSalesQty.Text = string.Empty;
-                txtSalesQty.Enabled = true;
+                if (buyerType == "Big")
+                {
+                    txtSalesQty.Text = DefaultHarvQty.ToString();
+                    txtSalesQty.Enabled = false;
+                    lblSalesCustomerType.Text = "Big Buyer Details";
+                }
+                else
+                {
+                    txtSalesQty.Text = string.Empty;
+                    txtSalesQty.Enabled = true;
+                    lblSalesCustomerType.Text = "Small Buyer Details";
+                }
             }
         }
        #endregion
@@ -3656,7 +3665,7 @@ namespace MainUI.Forms.Admin_Forms
                 txtUserUname.Text = dgv_user.Rows[rowIndex].Cells[5].Value.ToString();
                 txtUserPassword.Text = HashWorker.Decrypt(dgv_user.Rows[rowIndex].Cells[6].Value.ToString());
                 tglUserStatus.Checked = dgv_user.Rows[rowIndex].Cells[8].Value.ToString().Equals("Active") ? true : false;
-                pbxUserProfile.Image = rsrcmgr.ByteArrayToImage(File.ReadAllBytes(SystemPath.ProfilesPath + dgv_user.Rows[rowIndex].Cells[9].Value.ToString()));
+                try { pbxUserProfile.Image = rsrcmgr.ByteArrayToImage(File.ReadAllBytes(SystemPath.ProfilesPath + dgv_user.Rows[rowIndex].Cells[9].Value.ToString())); } catch { pbxUserProfile.Image = Resources.user; }
                 labelImagePath.Text = SystemPath.ProfilesPath + dgv_user.Rows[rowIndex].Cells[9].Value.ToString();
 
                 btnAddUser_Click(null, null);
@@ -3739,7 +3748,7 @@ namespace MainUI.Forms.Admin_Forms
             var inputrv = new InputRemoverAndValidation();
             btnSaveUser.Visible = true;
             pbxUserProfile.Image.Dispose();
-            pbxUserProfile.Image = Properties.Resources.user;
+            pbxUserProfile.Image = Resources.user;
             tglUserStatus.Checked = false;
             inputrv.ClearText(panelUserEntry);
             labelImagePath.Text = string.Empty;

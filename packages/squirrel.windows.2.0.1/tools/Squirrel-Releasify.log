@@ -184,3 +184,19 @@ C:\Users\diane\Documents\SalesAndInventoryWithExpense\Releases\Setup.wxs(3) : er
 [10/01/22 13:34:48] info: ReleasePackage: No release notes found in C:\Users\diane\AppData\Local\SquirrelTemp\tempa\RDEX.nuspec
 [10/01/22 13:34:50] info: Program: Building embedded zip file for Setup.exe
 [10/01/22 13:35:19] info: Program: Finished Squirrel Updater
+[15/01/22 11:06:14] info: Program: Starting Squirrel Updater: --releasify RDEX_SAIMS_w_ET.1.0.0.nupkg
+[15/01/22 11:06:14] info: Program: Bootstrapper EXE found at:C:\Users\diane\Documents\SalesAndInventoryWithExpense\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[15/01/22 11:06:14] info: Program: Creating release package: C:\Users\diane\Documents\SalesAndInventoryWithExpense\Releases\RDEX_SAIMS_w_ET.1.0.0.nupkg
+[15/01/22 11:06:14] info: ReleasePackage: Creating release package: C:\Users\diane\Documents\SalesAndInventoryWithExpense\Releases\RDEX_SAIMS_w_ET.1.0.0.nupkg => C:\Users\diane\Documents\SalesAndInventoryWithExpense\Releases\RDEX_SAIMS_w_ET-1.0.0-full.nupkg
+[15/01/22 11:06:15] info: ReleasePackage: Extracting dependent packages: []
+[15/01/22 11:06:15] info: ReleasePackage: Removing unnecessary data
+[15/01/22 11:06:18] info: Program: Building embedded zip file for Setup.exe
+[15/01/22 11:06:44] info: Program: Finished Squirrel Updater
+[18/01/22 10:31:46] info: Program: Starting Squirrel Updater: --releasify RDEX_SAIMS_w_ET.1.0.0.nupkg
+[18/01/22 10:31:46] info: Program: Bootstrapper EXE found at:C:\Users\diane\Documents\SalesAndInventoryWithExpense\packages\squirrel.windows.2.0.1\tools\Setup.exe
+[18/01/22 10:31:46] info: Program: Creating release package: C:\Users\diane\Documents\SalesAndInventoryWithExpense\Releases\RDEX_SAIMS_w_ET.1.0.0.nupkg
+[18/01/22 10:31:46] info: ReleasePackage: Creating release package: C:\Users\diane\Documents\SalesAndInventoryWithExpense\Releases\RDEX_SAIMS_w_ET.1.0.0.nupkg => C:\Users\diane\Documents\SalesAndInventoryWithExpense\Releases\RDEX_SAIMS_w_ET-1.0.0-full.nupkg
+[18/01/22 10:31:47] info: ReleasePackage: Extracting dependent packages: []
+[18/01/22 10:31:47] info: ReleasePackage: Removing unnecessary data
+[18/01/22 10:31:50] info: Program: Building embedded zip file for Setup.exe
+[18/01/22 10:32:13] info: Program: Finished Squirrel Updater

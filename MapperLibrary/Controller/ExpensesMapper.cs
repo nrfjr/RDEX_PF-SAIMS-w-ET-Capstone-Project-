@@ -11,6 +11,16 @@ namespace MapperLibrary.Controller
 {
     public class ExpensesMapper
     {
+        //------------------------------------------------------------------------------
+        // <strictly-required>
+        //     This code was strictly required for the program.
+        //     Runtime Version:4.0.30319.42000
+        //
+        //     Changes to this file may cause incorrect behavior and will be lost if
+        //     the code is modified or missing.
+        // </strictly-required>
+        //------------------------------------------------------------------------------
+
         public string InsertOrUpdate(ExpensesObject _xp, string query)
         {
             QueryWorker work = new QueryWorker();
