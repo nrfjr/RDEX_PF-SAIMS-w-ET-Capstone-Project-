@@ -43,10 +43,11 @@ B. SOFTWARE REQUIREMENTS
 
 DATABASE
 
-database name : rd_saims
-default admin account : 
-	username : root
-	password : root
+	- database name : rd_saims
+	- default admin account : admin
+	- default admin password : admin123
+	- username : root
+	- password : root
 	
 
 =====================================================================
@@ -100,7 +101,7 @@ CLIENT - SIDE SETUP
 4. Select 'MySQL ODBC ANSI Driver' and click Finish.
 5. Enter the Server IP Address on  TCP/IP Server Field
 6. Enter Username and Password provided by the server.
-7. Click 'Test' to test the connection, if the connection is successful then select the database 'rd_saims' otherwise, start from step 5.
+7. Click 'Test' to test the connection, if the connection is successful then select the database 'rd_saims' otherwise, start again from step 5.
 8. Click Add and OK to finish.
 
 
