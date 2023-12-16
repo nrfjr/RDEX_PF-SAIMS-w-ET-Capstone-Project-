@@ -1,0 +1,115 @@
+# These are needed project dependencies
+
+BouncyCastle.1.8.5
+	
+Revised System Upload
+	
+Dapper.2.0.123
+	
+Revised System Upload
+	
+Dapper.EntityFramework.2.0.90
+	
+Revised System Upload
+	
+DeltaCompressionDotNet.1.1.0
+	
+Revised System Upload
+	
+EPPlus.5.8.4
+	
+Revised System Upload
+	
+EntityFramework.6.4.4
+	
+Revised System Upload
+	
+FontAwesome.Sharp.5.15.4
+	
+Revised System Upload
+	
+FontAwesome.Sharp.Pro.5.15.4
+	
+Revised System Upload
+	
+Google.Protobuf.3.14.0
+	
+Revised System Upload
+	
+Guna.UI2.WinForms.2.0.2.1
+	
+Revised System Upload
+	
+K4os.Compression.LZ4.1.2.6
+	
+Revised System Upload
+	
+K4os.Compression.LZ4.Streams.1.2.6
+	
+Revised System Upload
+	
+K4os.Hash.xxHash.1.0.6
+	
+Revised System Upload
+	
+LiveCharts.0.9.7
+	
+Revised System Upload
+	
+LiveCharts.WinForms.0.9.7.1
+	
+Revised System Upload
+	
+LiveCharts.Wpf.0.9.7
+	
+Revised System Upload
+	
+MetroModernUI.1.4.0.0
+	
+Revised System Upload
+	
+Microsoft.IO.RecyclableMemoryStream.1.4.1
+	
+Revised System Upload
+	
+Microsoft.SqlServer.Types.14.0.1016.290
+	
+Revised System Upload
+	
+Mono.Cecil.0.11.2
+	
+Revised System Upload
+	
+MySql.Data.8.0.27
+	
+Revised System Upload
+	
+MySqlBackup.NET.2.3.6.1
+	
+Revised System Upload
+	
+SharpCompress.0.17.1
+	
+Revised System Upload
+	
+System.Buffers.4.5.1
+	
+Revised System Upload
+	
+System.ComponentModel.Annotations.4.7.0
+	
+Revised System Upload
+	
+System.Memory.4.5.4
+	
+Revised System Upload
+	
+System.Numerics.Vectors.4.5.0
+	
+Revised System Upload
+	
+System.Runtime.CompilerServices.Unsafe.5.0.0
+	
+Revised System Upload
+	
+squirrel.windows.2.0.1
